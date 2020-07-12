@@ -1,0 +1,26 @@
+# Git
+.git/
+
+# Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Python Cache
+__pycache__/
+*/__pycache__/*
+
+# Environments
+venv/
+env/
+
+# Markdown (README)
+*.md
+
+# Pycharm
+.idea/
+
+# This
+.dockerignore
+
+# serverless
+node_modules/
