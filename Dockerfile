@@ -11,9 +11,12 @@ RUN apt-get install -y nodejs
 RUN npm install -g serverless
 RUN npm install serverless-offline-python
 
-# Copy files and python requirements
-COPY ./ .
+# Additional sls plugins
+# RUN sls plugin install -n serverless-python-requirements
+# RUN npm i -D serverless-dotenv-plugin
 
+# Copy files and install python requirements
+COPY ./ .
 # RUN pip install --no-cache-dir -r requirements.txt
 
 # Start function!
