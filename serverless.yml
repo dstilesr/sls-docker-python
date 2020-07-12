@@ -1,0 +1,22 @@
+service: sls-docker-python
+
+provider:
+  name: aws
+  runtime: python3.8
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+
+plugins:
+  - serverless-offline-python
+
+serverless-offline:
+  host: 0.0.0.0
+  port: 3000
+  httpPort: 3000
+  resourceRoutes: true
