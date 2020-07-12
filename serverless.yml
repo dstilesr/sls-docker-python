@@ -12,8 +12,20 @@ functions:
           path: hello
           method: get
 
+package:
+  exclude:
+    - node_modules/**
+    - .git/**
+    - venv/**
+    - "*.md"
+    - Dockerfile
+    - ".dockerignore"
+    - "*/.ipynb_checkpoints/*"
+
 plugins:
   - serverless-offline-python
+#  - serverless-python-requirements
+#  - serverless-dotenv-plugin
 
 serverless-offline:
   host: 0.0.0.0
