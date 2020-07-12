@@ -21,4 +21,4 @@ COPY ./ .
 
 # Start function!
 EXPOSE 3000
-CMD ["serverless", "offline", "--host", "0.0.0.0"]
+CMD ["serverless", "offline", "--host", "0.0.0.0", "--port", "3000"]
