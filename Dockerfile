@@ -3,9 +3,10 @@ FROM python:3.8-slim-buster
 WORKDIR /app
 
 # Install nodejs and npm
-RUN apt-get update && apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get update \
+    && apt-get install -y curl \
+    && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
+    && apt-get install -y nodejs
 
 # Install serverless and plugins
 RUN npm install -g serverless
