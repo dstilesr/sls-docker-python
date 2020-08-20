@@ -26,9 +26,3 @@ plugins:
   - serverless-offline-python
 #  - serverless-python-requirements
 #  - serverless-dotenv-plugin
-
-serverless-offline:
-  host: 0.0.0.0
-  port: 3000
-  httpPort: 3000
-  resourceRoutes: true
