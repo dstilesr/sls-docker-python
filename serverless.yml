@@ -23,6 +23,6 @@ package:
     - "*/.ipynb_checkpoints/*"
 
 plugins:
-  - serverless-offline-python
+  - serverless-offline
 #  - serverless-python-requirements
 #  - serverless-dotenv-plugin
