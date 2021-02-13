@@ -13,7 +13,7 @@ RUN apt-get update \
 COPY ./ .
 
 # Additional sls plugins
-RUN npm install serverless-offline
+RUN npm install --save-dev serverless-offline
 # RUN pip install --no-cache-dir -r requirements.txt
 # RUN sls plugin install -n serverless-python-requirements
 # RUN npm i -D serverless-dotenv-plugin
